@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joker1092 - Game Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="physics-canvas"></canvas>
+    <header>
+        <nav>
+            <div class="logo">PORTFOLIO</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#studies">Studies</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-text">
+                <h1>안녕하세요, 게임 개발자 우세철입니다.</h1>
+                <p>물리 엔진과 콘텐츠 제작에 깊은 열정을 가지고 있습니다.</p>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>ABOUT ME</h2>
+            <p>
+                저는 게임 개발에 대한 열정으로 새로운 도전을 시작한 개발자 우세철입니다. 특히 가상 세계에 생동감을 불어넣는 물리 프로그래밍과 플레이어에게 즐거운 경험을 선사하는 콘텐츠 제작에 큰 매력을 느끼고 있습니다.<br><br>
+                육군 부사관으로 복무하며 기른 강한 책임감과 동료와의 협업 능력은 개발자로서 저의 가장 큰 자산입니다. 전역 후에는 3년간 모바일 및 웹 애플리케이션 개발자로서 실무 경험을 쌓으며, 소프트웨어 개발의 탄탄한 기본기와 라이브 서비스 환경에 대한 깊은 이해를 갖추게 되었습니다.<br><br>
+                IT 개발자로서의 경험은 저의 오랜 꿈이었던 게임 개발에 대한 열망을 더욱 키웠습니다. 이 꿈을 실현하기 위해, 저는 게임인재원에서 2년간 오직 게임 개발에만 매진하며 심도 있는 전문성을 쌓았습니다.<br><br>
+                이제 군에서 배운 성실함, IT 분야에서 쌓은 실무 경험, 그리고 게임인재원에서 키운 전문성을 모두 녹여내어, 플레이어들에게 오래도록 기억될 즐거움을 선사하는 게임 개발자로 성장하고 싶습니다.
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2>PROJECTS</h2>
+            <div class="project-grid">
+                <!-- 프로젝트 카드는 script.js에서 동적으로 추가하거나 여기에 직접 추가할 수 있습니다. -->
+                <a href="project1.html" class="card-link">
+                    <div class="card">
+                        <h3>아빠! 잡아줘</h3>
+                        <p>WinAPI를 활용한 캐주얼 아케이드 게임</p>
+                        <div class="tags">
+                            <span>2D</span>
+                            <span>C++</span>
+                            <span>WinAPI</span>
+                            <span>게임인재원</span>
+                        </div>
+                        <div class="card-footer">
+                            <span class="read-more-link">자세히 보기 &rarr;</span>
+                        </div>
+                    </div>
+                </a>
+                <div class="card">
+                    <h3>프로젝트 2</h3>
+                    <p>UE5를 활용한 액션 RPG</p>
+                    <div class="tags">
+                        <span>Unreal Engine</span>
+                        <span>C++</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>SKILLS</h2>
+            <div class="skills-grid">
+                <!-- 보유 기술을 아이콘과 함께 나열합니다. -->
+                <div class="skill-item">C++</div>
+                <div class="skill-item">PhysX</div>
+                <div class="skill-item">Unreal Engine</div>
+                <div class="skill-item">Unity</div>
+            </div>
+        </section>
+
+        <section id="studies">
+            <h2>STUDIES</h2>
+            <div class="project-grid">
+                <!-- Study-1 Card -->
+                <a href="study1.html" class="card-link">
+                    <div class="card">
+                        <h3>C++ 메모리 풀 구현</h3>
+                        <p>게임 클라이언트의 잦은 메모리 할당/해제 오버헤드를 줄이기 위한 고정 크기 메모리 풀을 직접 설계하고 구현한 연구입니다.</p>
+                        <div class="tags">
+                            <span>C++</span>
+                            <span>Memory Management</span>
+                            <span>System Programming</span>
+                        </div>
+                        <div class="card-footer">
+                            <span class="read-more-link">자세히 보기 &rarr;</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- 여기에 다른 연구 카드들을 추가할 수 있습니다. -->
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>CONTACT</h2>
+            <p>아래 편하신 방법으로 연락주세요.</p>
+            <div class="contact-links">
+                <a href="mailto:your.email@example.com" class="contact-link-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="currentColor"><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/></svg>
+                    <span>Email</span>
+                </a>
+                <a href="https://github.com/joker1092" target="_blank" class="contact-link-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.91 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Woo Secheol. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

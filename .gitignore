@@ -1,0 +1,15 @@
+# Jekyll-specific ignores
+_site/
+.jekyll-cache/
+
+# Bundler-specific ignores
+.bundle/
+vendor/bundle/
+
+# OS-specific ignores
+.DS_Store
+Thumbs.db
+
+# Log and temporary files
+*.log
+*.tmp

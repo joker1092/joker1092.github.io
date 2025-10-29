@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1 - Joker1092 Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .project-detail {
+            padding: 4rem 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .project-detail h1 {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        .project-detail .meta-info {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-style: italic;
+            color: #aaa;
+        }
+        .project-detail h3 {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            border-left: 4px solid var(--primary-color);
+            padding-left: 1rem;
+        }
+        .project-detail p, .project-detail ul {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+        .project-detail ul {
+            list-style-position: inside;
+            padding-left: 1rem;
+        }
+        .project-detail .media-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+        }
+        .project-detail .media-gallery img {
+            width: 100%;
+            border-radius: 8px;
+            background-color: var(--surface-color);
+        }
+        .back-link-wrapper {
+            text-align: center;
+            margin-top: 4rem;
+        }
+        .back-link {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            border: 2px solid var(--primary-color);
+            border-radius: 50px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .back-link:hover {
+            background-color: var(--primary-color);
+            color: var(--background-color);
+        }
+        .card-link {
+            text-decoration: none;
+            color: inherit;
+            display: block; /* 카드가 링크 영역을 꽉 채우도록 */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">PORTFOLIO</div>
+            <ul>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#studies">Studies</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article class="project-detail">
+            <h1>아빠! 잡아줘</h1>
+            <p class="meta-info">기간: 202X.XX - 202X.XX  |  역할: 콘텐츠 제작  |  사용 기술: C++, WinAPI</p>
+
+            <div class="media-gallery">
+                <!-- 예시: 16:9 비율의 회색 이미지. 실제 이미지나 GIF로 교체하세요. -->
+                <img src="/images/p1png.bmp" alt="프로젝트 1 대표 이미지 1">
+                <img src="/images/p1png2.bmp" alt="프로젝트 1 대표 이미지 2">
+            </div>
+
+            <h3>프로젝트 개요</h3>
+            <p>
+                게임 인제원 첫번째 팀 프로젝트<br>
+                C++과 WinAPI를 사용하여 게임 루프에 대한 이해와 팀으로서의 프로젝트를 체험해보는 첫번째 프로젝트
+            </p>
+
+            <h3>주요 기능</h3>
+            <ul>
+                <li><strong>2D스프라이트 에니메이션:</strong> 2D스프라이트를 이용한 에니메이션 처리</li>
+                <li><strong>충돌체:</strong>물리 라이브러리 없이 2D스프라이트에 대한 출돌체 처리</li>
+                <li><strong>FMOD:</strong> FMOD를 이용한 사운드 처리</li>
+            </ul>
+
+            <h3>기술적 도전 과제 및 해결 과정</h3>
+            <p>
+                WinAPI GDI+를 이용하여 랜더를 함에 있어 GDI+ API의 회전 계산시 프레임이 엄청 떨어지는 문제가 있었으나 API를 이용하지 않고 회전 계산 후 다시 그려 내는 방식을 사용
+                이를 통해 보완 할수 있었다.
+            </p>
+
+            <h3>결과 및 배운 점</h3>
+            <p>
+                게임의 루프에 대한 이해와 C++ 대한 이해를 넑힐수 있는 기회였으며 팀으로서 게임을 만들어본 첫 작품으로서 협업에 대하여 배울수 있는 기회 였다.
+            </p>
+
+            <div class="back-link-wrapper">
+                <a href="index.html#projects" class="back-link">&larr; 프로젝트 목록으로 돌아가기</a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Woo Secheol. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
