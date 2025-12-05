@@ -26,7 +26,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* 캔버스를 배경으로 */
+    z-index: -1; //캔버스를 배경으로 
     opacity: 0.1;
 }
 
@@ -57,8 +57,8 @@ nav {
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    /* 기존 color 속성은 그라데이션을 위해 주석 처리하거나 제거합니다. */
-    background: linear-gradient(45deg, var(--primary-color), #8a2be2); /* 파란색에서 보라색으로 */
+    // 기존 color 속성은 그라데이션을 위해 주석 처리하거나 제거합니다. 
+    background: linear-gradient(45deg, var(--primary-color), #8a2be2); //파란색에서 보라색으로 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -89,7 +89,7 @@ main {
 
 section {
     padding: 6rem 2rem;
-    max-width: 1200px; /* 상단바와 동일하게 변경 */
+    max-width: 1200px; // 상단바와 동일하게 변경 
     margin: 0 auto;
     text-align: center;
 }
@@ -101,8 +101,8 @@ section h2 {
 }
 
 #hero {
-    /* height: calc(100vh - var(--header-height)); */ /* 전체 화면을 차지하지 않도록 높이 속성을 주석 처리합니다. */
-    padding: 8rem 2rem; /* 화면 상단과 하단에 적절한 여백을 부여합니다. */
+    // height: calc(100vh - var(--header-height)); // 전체 화면을 차지하지 않도록 높이 속성을 주석 처리합니다. 
+    padding: 8rem 2rem; //화면 상단과 하단에 적절한 여백을 부여합니다. 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -158,7 +158,7 @@ section h2 {
     font-size: 0.8rem;
 }
 
-/* Styles for new icon-based contact links */
+// Styles for new icon-based contact links 
 .contact-links {
     display: flex;
     justify-content: center;
@@ -193,7 +193,7 @@ footer {
     border-top: 1px solid var(--surface-color);
 }
 
-/* Card Footer for 'Read More' link */
+// Card Footer for 'Read More' link 
 .card-footer {
     margin-top: 1.5rem;
     text-align: right;
@@ -210,7 +210,7 @@ footer {
     opacity: 0.7;
 }
 
-/* Wrapper for card links to remove default styles */
+// Wrapper for card links to remove default styles 
 .card-link {
     text-decoration: none;
     color: inherit;
