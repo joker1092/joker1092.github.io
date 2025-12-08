@@ -19,17 +19,17 @@ body {
     color: var(--text-color);
     line-height: 1.6;
 }
-/*
+
 #physics-canvas {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; //캔버스를 배경으로 
+    z-index: -1; 
     opacity: 0.1;
 }
-
+/*
 header {
     position: fixed;
     top: 0;
