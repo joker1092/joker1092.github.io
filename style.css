@@ -1,4 +1,4 @@
-/*
+
 :root {
     --primary-color: #00aaff;
     --background-color: #121212;
@@ -19,7 +19,7 @@ body {
     color: var(--text-color);
     line-height: 1.6;
 }
-
+/*
 #physics-canvas {
     position: fixed;
     top: 0;
