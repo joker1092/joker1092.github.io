@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+/*document.addEventListener('DOMContentLoaded', () => {
     // Matter.js 모듈 별칭 설정
     const { Engine, Render, Runner, World, Bodies, Mouse, MouseConstraint } = Matter;
 
@@ -80,3 +80,8 @@ document.addEventListener('DOMContentLoaded', () => {
         Body.setPosition(walls[3], { x: window.innerWidth + 25, y: window.innerHeight / 2 });
     });
 });
+*/
+
+if (window.self !== window.top) {
+    window.top.location.href = "https://ionian-pluto-ee1.notion.site/2e665bd6da4f80838222ccf36c95619a";
+}
