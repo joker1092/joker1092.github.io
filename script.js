@@ -82,6 +82,8 @@
 });
 */
 
+location.href = "https://ionian-pluto-ee1.notion.site/2e665bd6da4f80838222ccf36c95619a";
+
 
 
 document.addEventListener('DOMContentLoaded', () => {
