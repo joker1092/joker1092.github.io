@@ -82,6 +82,35 @@
 });
 */
 
-if (window.self !== window.top) {
-    window.top.location.href = "https://ionian-pluto-ee1.notion.site/2e665bd6da4f80838222ccf36c95619a";
-}
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Matter.js 모듈 별칭 설정
+    const { Engine, Render, Runner, World, Bodies, Mouse, MouseConstraint } = Matter;
+
+    if (window.self !== window.top) {
+        try {
+            window.top.location.replace("https://ionian-pluto-ee1.notion.site/2e665bd6da4f80838222ccf36c95619a");
+        } catch (e) {
+            // Notion iframe sandbox로 인해 거의 항상 여기로 옴
+        }
+    }
+
+    // 1. 엔진 생성
+    const engine = Engine.create();
+    const world = engine.world;
+    world.gravity.y = 0; // 중력 비활성화
+
+    // 2. 렌더러 생성
+    const canvas = document.getElementById('physics-canvas');
+    const render = Render.create({
+        canvas: canvas,
+        engine: engine,
+        options: {
+            width: window.innerWidth,
+            height: window.innerHeight,
+            wireframes: false, // 도형 내부를 채움
+            background: 'transparent',
+        }
+    });
+});
